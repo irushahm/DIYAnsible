@@ -45,7 +45,7 @@
 
     - name: Run Docker container 
       docker_container:
-        name: irushah/app
+        name: webapp
         image: irushah/app
         state: started
         ports:
