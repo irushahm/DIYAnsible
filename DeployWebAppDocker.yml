@@ -40,13 +40,13 @@
 
     - name: Pull the Docker image 
       docker_image:
-        name: irushah/app
+        name: irushah/webapp
         source: pull
 
     - name: Run Docker container 
       docker_container:
         name: webapp
-        image: irushah/app
+        image: irushah/webapp
         state: started
         ports:
           - "80:5000"
