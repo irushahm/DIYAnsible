@@ -1,0 +1,9 @@
+---
+- name: Print hostname
+  hosts: all
+  gather_facts: false
+
+  tasks:
+    - name: Print the hostname
+      debug:
+        msg: "The hostname is {{ ansible_hostname }}"
