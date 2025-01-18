@@ -1,7 +1,7 @@
 ---
 - name: Get hostname and OS info
-  hosts: ubuntu_servers
-  gather_facts: yes
+  hosts: all
+  gather_facts: no
 
   tasks:
     - name: Print the hostname
